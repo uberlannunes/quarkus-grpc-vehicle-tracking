@@ -1,6 +1,6 @@
-# Quarkus Vehicle Tracker Demo Project
+# Quarkus Vehicle Tracking Demo Project
 
-This is a demo project for a Vehicle Tracker System built with Quarkus.
+This is a demo project for a Vehicle Tracking System built with Quarkus.
 
 
 ## Technology Stack

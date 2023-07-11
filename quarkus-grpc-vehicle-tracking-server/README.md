@@ -1,6 +1,6 @@
-# Quarkus Vehicle Tracker Server
+# Quarkus Vehicle Tracking Server
 
-This is a demo project for a Vehicle Tracker System built with Quarkus. The project is a gRPC server that showcases three gRPC services: `GetAllVehicles`, `GetVehicleById`, and `TrackVehicle`.
+This is a demo project for a Vehicle Tracking System built with Quarkus. The project is a gRPC server that showcases three gRPC services: `GetAllVehicles`, `GetVehicleById`, and `TrackVehicle`.
 
 
 ## Technology Stack
