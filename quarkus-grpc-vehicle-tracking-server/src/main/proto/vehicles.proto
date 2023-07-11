@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "dev.uberlan";
+option java_outer_classname = "VehicleGrpcProto";
+
+import "google/protobuf/empty.proto";
+
+package vehicles;
+
+service VehicleGrpc {
+  rpc GetAllVehicles(google.protobuf.Empty) returns (VehicleListResponse) {}
+  rpc GetVehicleById(VehicleRequest) returns (VehicleResponse) {}
+  rpc TrackVehicle(VehicleRequest) returns (stream VehicleDataTrackerResponse) {}
+}
+
+message VehicleRequest {
+  string id = 1;
+}
+
+message VehicleResponse {
+  string id = 1;
+  string model = 2;
+  string color = 3;
+}
+
+message VehicleListResponse {
+  repeated VehicleResponse vehicles = 1;
+}
+
+message VehicleDataTrackerResponse {
+  string vehicleId = 1;
+  int32 speed = 2;
+  string latitude = 3;
+  string longitude = 4;
+}
